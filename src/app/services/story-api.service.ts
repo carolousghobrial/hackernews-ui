@@ -7,7 +7,7 @@ import { BehaviorSubject, catchError, forkJoin, map, Observable, of, tap } from 
 })
 export class StoryApiService {
 
-  private apiUrl = 'https://localhost:44381/api/hackernews';
+  private apiUrl = 'https://hackernewsapi20251226160215.azurewebsites.net/api/hackernews';
   private loadingSubject = new BehaviorSubject<boolean>(false);
 
   constructor(private http: HttpClient
